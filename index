@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	body{
+		background-color: #66B3FF;
+		height: 300px;
+		overflow: hidden;
+	}
+		#head{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			top:31%;
+			margin-left: -100px;
+			margin-top: -100px;
+			background-color: #0080FF;
+			border-radius: 999px;
+			border: 1px solid black;
+		}
+		#face{
+			width: 179px;
+			height: 150px;
+			position: absolute;
+			left: 43.4%;
+			top:22%;
+			
+			background-color: white;
+			border-radius: 999px;
+			border: 1px solid black;
+		}
+		#leftEye{
+			width: 50px;
+			height: 60px;
+			position: absolute;
+			left:46.2%;
+			top:18%;
+			
+			background-color: white;
+			border-radius: 50%;
+			border: 1px solid black;	
+		}
+		#rightEye{
+			width: 50px;
+			height: 60px;
+			position: absolute;
+			left:50%;
+			top:18%;
+			
+			background-color: white;
+			border-radius: 50%;
+			border: 1px solid black;	
+		}
+		#leftEye1{
+			width: 13px;
+			height: 20px;
+			position: absolute;
+			left:48.5%;
+			top:22.2%;
+			
+			background-color: black;
+			border-radius: 50%;
+			border: 1px solid black;	
+		}
+		#rightEye1{
+			width: 13px;
+			height: 20px;
+			position: absolute;
+			left:50.5%;
+			top:22.2%;
+			background-color: black;
+			border-radius: 50%;
+			border: 1px solid black;	
+		}
+		#leftEye2{
+			width: 5px;
+			height: 8px;
+			position: absolute;
+			left:48.9%;
+			top:23%;
+			
+			background-color: white;
+			border-radius: 50%;
+			border: 1px solid black;	
+		}
+		#rightEye2{
+			width: 5px;
+			height: 8px;
+			position: absolute;
+			left:50.7%;
+			top:23%;
+			
+			background-color: white;
+			border-radius: 50%;
+			border: 1px solid black;	
+		}
+		#nose{
+			width: 25px;
+			height: 25px;
+			position: absolute;
+			left:49%;
+			top:25.5%;
+			
+			background-color: red;
+			border-radius: 50%;
+			border: 1px solid black;
+		}
+		#nose1{
+			width: 6px;
+			height: 6px;
+			position: absolute;
+			left:49.5%;
+			top:26.5%;
+			
+			background-color: white;
+			border-radius: 50%;
+				
+		}
+		#line{
+			width: 1px;
+			height: 100px;
+			position: absolute;
+			left:49.9%;
+			top:29.7%;
+			background-color: white;
+			border-left: 2px solid #000000;
+			margin-left: 1px;
+		}
+		#line1{
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			left:43.5%;
+			top:28%;
+			background-color: white;
+			border-bottom: 1px solid #000000;
+			margin-left: 1px;
+			transform:rotate(12deg);
+		}
+			#line2{
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			left:43.5%;
+			top:32%;
+			background-color: white;
+			border-bottom: 1px solid #000000;
+			margin-left: 1px;
+			
+		}
+			#line3{
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			left:43.5%;
+			top:36%;
+			background-color: white;
+			border-bottom: 1px solid #000000;
+			margin-left: 1px;
+			transform:rotate(-12deg);
+		}
+		#line4{
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			left:51.6%;
+			top:28%;
+			background-color: white;
+			border-bottom: 1px solid #000000;
+			margin-left: 1px;
+			transform:rotate(-12deg);
+		}
+		#line5{
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			left:51.6%;
+			top:32%;
+			background-color: white;
+			border-bottom: 1px solid #000000;
+			margin-left: 1px;
+			
+		}
+		#line6{
+			width: 60px;
+			height: 1px;
+			position: absolute;
+			left:51.6%;
+			top:36%;
+			background-color: white;
+			border-bottom: 1px solid #000000;
+			margin-left: 1px;
+			transform:rotate(12deg);
+		}
+	
+		#mouse{
+
+			width: 130px;
+			height: 130px;
+			position: absolute;
+			left: 45.1%;
+			top:30%;
+			margin-left: -0.5px;
+			background-color: white;
+			border-radius: 0 0 65px 65px;
+			border-bottom: 2px solid black;
+			height: 65px;
+		}
+		#food{
+			width: 80px;
+			height: 62px;
+			position: absolute;
+			left:46.9%;
+			top:39.2%;
+			
+			background-color:#FFAF60;
+			border-radius: 50%;
+			border: 1px solid black;
+		}
+		#food1{
+			width: 78px;
+			height: 57px;
+			position: absolute;
+			left:47%;
+			top:38.9%;
+			
+			background-color: #FFAF60;
+			border-radius: 50%;
+			border: 1px solid black;
+		}
+		#food2{
+			width: 73px;
+			height: 52px;
+			position: absolute;
+			left:47.2%;
+			top:39.1%;
+			
+			background-color:#844200;
+			border-radius: 50%;
+			
+		}
+		#leftFist{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left:45%;
+			top:40%;
+			margin-left: -15px;
+			margin-top: -15px;
+			background-color: white;
+			border-radius: 999px;
+			border: 1px solid black;
+		}
+		#rightFist{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			left:53%;
+			top:40%;
+			margin-left: -15px;
+			margin-top: -15px;
+			background-color: white;
+			border-radius: 999px;
+			border: 1px solid black;
+		}
+		#leftHand{
+			width: 50px;
+			height: 70px;
+			position: absolute;
+			left:43.3%;
+			top:44%;
+			margin-left: -15px;
+			margin-top: -15px;
+			background-color: #0080FF;
+			border-radius: 50%;
+			transform:rotate(34deg);
+			border: 1px solid black;
+		}
+		#rightHand{
+			width: 50px;
+			height: 70px;
+			position: absolute;
+			left:54.3%;
+			top:44%;
+			margin-left: -15px;
+			margin-top: -15px;
+			background-color: #0080FF;
+			border-radius: 50%;
+			transform:rotate(-34deg);
+			border: 1px solid black;
+		}
+		#tummy{
+			width: 110px;
+			height: 110px;
+			position: absolute;
+			left: 53.1%;
+			top:58.5%;
+			margin-left: -100px;
+			margin-top: -100px;
+			background-color: white;
+			border-radius: 999px;
+			border: 1px solid black;
+		}
+		#bodyy{
+			width: 135px;
+			height: 115px;
+			position: absolute;
+			left: 44.7%;
+			top:45%;
+			background-color: #0080FF;
+		}
+		#cover{
+			width: 400px;
+			height: 400px;
+			position: absolute;
+			left: 35.3%;
+			top:62.3%;
+			background-color:#66B3FF;
+			border-radius: 50%;
+		}
+		#leftLeg{
+			width: 80px;
+			height: 90px;
+			position: absolute;
+			left:42%;
+			top:53.5%;
+			margin-left: -15px;
+			margin-top: -15px;
+			background-color: white;
+			border-radius: 50%;
+			border: 1px solid black;
+		}
+		#rightLeg{
+			width: 80px;
+			height: 90px;
+			position: absolute;
+			left:53.7%;
+			top:53.5%;
+			margin-left: -15px;
+			margin-top: -15px;
+			background-color: white;
+			border-radius: 50%;
+			border: 1px solid black;
+		}
+		#pocket{
+			width: 88px;
+			height: 82px;
+			position: absolute;
+			left: 46.5%;
+			top:51.6%;
+			margin-left: -0.5px;
+			background-color: white;
+			border-radius: 0 0 41px 41px;
+			border: 1px solid black;
+			height: 41px;
+
+		}
+	</style>
+</head>
+<body>
+		<div id="head"></div>
+		<div id="face"></div>
+		<div id="leftEye"></div>
+		<div id="rightEye"></div>
+		<div id="leftEye1"></div>
+		<div id="rightEye1"></div>
+		<div id="leftEye2"></div>
+		<div id="rightEye2"></div>
+		<div id="nose"></div>
+		<div id="nose1"></div>
+		<div id="bodyy"></div>
+		<div id="tummy"></div>
+		<div id="mouse"></div>
+		<div id="line"></div>
+		<div id="line1"></div>
+		<div id="line2"></div>
+		<div id="line3"></div>
+		<div id="line4"></div>
+		<div id="line5"></div>
+		<div id="line6"></div>
+		<div id="food"></div>
+		<div id="food1"></div>
+		<div id="food2"></div>
+		
+		<div id="leftHand"></div>	
+		<div id="rightHand"></div>	
+		
+		
+		<div id="cover"></div>
+		<div id="leftFist"></div>	
+		<div id="rightFist"></div>
+		<div id="leftLeg"></div>	
+		<div id="rightLeg"></div>	
+		<div id="pocket"></div>	
+</body>
+</html>
